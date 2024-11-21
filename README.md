@@ -23,7 +23,11 @@ Please follow the Timelens instruction to run the timelens using below command:
 ```
 python -m timelens.run_timelens ./checkpoint.bin $EVENTS_INPUT_DIR $FRAME_INPUT_DIR $FRAME_OUTPUT_DIR 0 $inserts
 ```
-,where $EVENTS_INPUT_DIR is 'example_data/kaleidoscope/events', $FRAME_INPUT_DIR is 'example_data/kaleidoscope/images', $FRAME_OUTPUT_DIR is 'result/', $inserts is 7 in our case.                          
+,where 
+```$EVENTS_INPUT_DIR``` is the directory of the event data ('example_data/kaleidoscope/events'), 
+```$FRAME_INPUT_DIR``` is the directory of the frame data ('example_data/kaleidoscope/images'), 
+```$FRAME_OUTPUT_DIR``` is the directory of the output frame data ('result/'), 
+```$inserts``` is the number of inserts, 7 in our case.         
 
 Then stitch all the pictures into videos, then run "refocus/kaleidoscope_refocus.ipynb" to get the final result.
 
